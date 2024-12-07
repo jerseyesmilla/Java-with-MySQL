@@ -1,0 +1,13 @@
+CREATE DATABASE my_inventory;
+USE my_inventory;
+
+CREATE TABLE inventory(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    item_code VARCHAR(255),
+    description VARCHAR(255),
+    quantity INT,
+    name VARCHAR(255),
+    isUsed BOOLEAN,
+    cost INT,
+    total_cost INT
+    );

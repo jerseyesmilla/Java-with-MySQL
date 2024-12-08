@@ -6,9 +6,9 @@ import java.sql.ResultSet;
 
 
 public class Function1 {
-    private static String url = "jdbc:mysql://localhost:3306/my_inventory"; //JDBC URL connection
-    private static String username = "root"; //default username in MySQL
-    private static String password = ""; //default password in MySQL
+    private static final String url = "jdbc:mysql://localhost:3306/my_inventory"; //JDBC URL connection
+    private static final String username = "root"; //default username in MySQL
+    private static final String password = ""; //default password in MySQL
     //Method to add an item to inventory table
     void addItem(String item_code, String description, int quantity, String name, int cost){
         String query = "INSERT INTO inventory (item_code, description, quantity, name, Used, cost, total_cost) VALUES (?, ?, ?, ?, ?, ?, ?)";
